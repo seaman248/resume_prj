@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/seaman248/resume_prj/issues"
   },
-  "homepage": "https://github.com/seaman248/resume_prj#readme"
+  "homepage": "https://github.com/seaman248/resume_prj#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.5.0",
+    "kouto-swiss": "^0.12.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }
