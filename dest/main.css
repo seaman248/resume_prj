@@ -131,16 +131,40 @@ body {
   height: 100%;
 }
 .body-wraper {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
+@media only screen and (min-device-width: 960px) and (min-width: 960px) {
+  .body-wraper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
 .left-column {
-  display: inline-block;
-  float: left;
-  overflow: hidden;
-  width: 380px;
-  margin: 0 10px;
+  padding: 0 20px 0 20px;
+}
+@media only screen and (min-device-width: 960px) and (min-width: 960px) {
+  .left-column {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 380px;
+    margin: 0 10px;
+  }
+}
+.right-column {
+  padding: 0 20px 0 20px;
+}
+@media only screen and (min-device-width: 960px) and (min-width: 960px) {
+  .right-column {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 460px;
+    margin: 0 10px;
+  }
 }
 header {
   font-size: 25pt;
@@ -174,7 +198,6 @@ header p.job {
   text-transform: uppercase;
   font-size: 70%;
   font-weight: bold;
-  line-height: 0;
   padding-top: 8px;
   line-height: 60px;
 }
@@ -184,6 +207,7 @@ header p.job {
 }
 .box .box-header {
   position: relative;
+  margin-bottom: 18px;
 }
 .box .box-header:before,
 .box .box-header:after {
@@ -232,9 +256,6 @@ header p.job {
   font-weight: bold;
   padding-right: 10px;
 }
-.box .box-content {
-  padding-top: 5px;
-}
 .box .box-content p.little {
   font-size: 45%;
 }
@@ -243,6 +264,7 @@ header p.job {
   text-transform: uppercase;
   font-size: 55%;
   line-height: 45px;
+  font-weight: bold;
 }
 .box .contacts:before,
 .box .contacts:after {
@@ -263,4 +285,102 @@ header p.job {
 .box .contact-content p {
   font-size: 50%;
   line-height: 45px;
+}
+.box .skills {
+  text-align: center;
+}
+.box .skills h5 {
+  text-transform: uppercase;
+  font-size: 70%;
+}
+.box .skills ul.skill-points {
+  display: inline-block;
+  margin-top: 15px;
+}
+.box .skills ul.skill-points li {
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  display: inline-block;
+  border: 1px solid #3d6cb0;
+  margin: 0 4px 0 4px;
+}
+.box .skills ul.skill-points .skill-point {
+  background-color: #3d6cb0;
+}
+.box .skill-item-box {
+  margin-bottom: 30px;
+}
+.box ul.points {
+  list-style: none;
+}
+.box ul.points:before,
+.box ul.points:after {
+  content: " ";
+  display: table;
+}
+.box ul.points:after {
+  clear: both;
+}
+.box ul.points li {
+  margin-bottom: 20px;
+}
+.box ul.points li h5 {
+  padding: 0 0 0 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 70%;
+}
+.box ul.points .educat-date {
+  text-transform: none;
+  font-weight: 300;
+  color: #000;
+  padding-left: 15px;
+}
+.box ul.points .university-name {
+  font-weight: 300;
+  font-size: 70%;
+  padding: 0 0 0 40px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.box ul.points .university-desc {
+  font-weight: 100;
+  font-size: 42%;
+  padding: 0 0 0 40px;
+}
+.box ul.points li:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f111';
+  position: absolute;
+  font-size: 70%;
+}
+.box .educat-h5 {
+  color: #3d6cb0;
+}
+.box .sowtware-wraper {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.box .sowtware-wraper li {
+  padding-bottom: 20px;
+}
+.box .sowtware-wraper h6 {
+  font-weight: 100;
+  font-size: 75%;
+  text-transform: uppercase;
+}
+.box .progress-container {
+  margin-top: 12px;
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 18px;
+}
+.box .progress-bar {
+  background-color: #3d6cb0;
+  height: 18px;
 }

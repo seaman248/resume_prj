@@ -1,6 +1,10 @@
 @import 'kouto-swiss'
+
 meyer-reset()
+
 BLUE = #3d6cb0
+
+DESCTOP_SCREEN = only screen, min-device-width 960px, min-width 960px
 
 html
 	overflow-y scroll
@@ -11,9 +15,18 @@ body
 	font-size 25pt
 	height 100%
 .body-wraper
-	gs()
+	gs('fluid')
+	+media-query(DESCTOP_SCREEN)
+		gs()
 .left-column
-	col(5)
+	padding 0 20px 0 20px
+	+media-query(DESCTOP_SCREEN)
+		col(5)
+		
+.right-column
+	padding 0 20px 0 20px
+	+media-query(DESCTOP_SCREEN)
+		col(6)
 
 header
 	font-size 25pt
@@ -44,7 +57,6 @@ header
 		text-transform uppercase
 		font-size 70%
 		font-weight bold
-		line-height 0
 		padding-top 8px
 		line-height: 60px
 		
@@ -53,6 +65,7 @@ header
 	padding-top 20px
 	.box-header
 		position relative
+		margin-bottom 18px
 		clearfix()
 	.box-header-line
 		position absolute
@@ -89,7 +102,6 @@ header
 		font-weight bold
 		padding-right 10px
 	.box-content
-		padding-top 5px
 		p.little
 			font-size 45%
 
@@ -98,6 +110,7 @@ header
 		text-transform uppercase
 		font-size 55%
 		line-height: 45px
+		font-weight bold
 	.contacts
 		clearfix()
 	.contact-name
@@ -109,7 +122,79 @@ header
 		p
 			font-size 50%
 			line-height: 45px
-
 	
+	.skills
+		text-align center
+		h5
+			text-transform uppercase
+			font-size 70%
+		ul.skill-points
+			display: inline-block
+			margin-top 15px
+			li
+				height 13px
+				width 13px
+				background-color white
+				border-radius 50%
+				float left
+				display: inline-block
+				border 1px solid BLUE
+				margin 0 4px 0 4px
+			.skill-point
+				background-color BLUE
+	.skill-item-box
+		margin-bottom 30px
+		
+	ul.points
+		list-style none
+		clearfix()
+		li
+			margin-bottom: 20px
+			h5
+				padding 0 0 0 40px
+				text-transform uppercase
+				font-weight: bold
+				font-size 70%
+		.educat-date
+			text-transform none
+			font-weight 300
+			color black
+			padding-left 15px
+		.university-name
+			font-weight: 300
+			font-size 70%
+			padding 0 0 0 40px
+			text-transform uppercase
+			margin-top 8px
+			margin-bottom 8px
+		.university-desc
+			font-weight: 100
+			font-size 42%
+			padding 0 0 0 40px
+		li:before
+			font normal normal normal 14px/1 FontAwesome
+			content '\f111'
+			position: absolute
+			font-size 70%
+	.educat-h5
+		color BLUE
+	
+	.sowtware-wraper
+		column-count 2
+		li
+			padding-bottom 20px
+		h6
+			font-weight 100
+			font-size 75%
+			text-transform uppercase
+	.progress-container
+		margin-top 12px
+		background-color #e6e6e6
+		width 100%
+		height 18px
+	.progress-bar
+		background-color BLUE
+		height: 18px
+
 
 			
