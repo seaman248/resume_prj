@@ -34,6 +34,11 @@ gulp.task('styl', function() {
 		.pipe(connect.reload())
 });
 
+gulp.task('fonts', function() {
+	gulp.src('./src/fonts/**')
+		.pipe(gulp.dest('./dest/fonts'))
+});
+
 gulp.task('watch', ['img', 'jade', 'styl'], function() {
 	gulp.watch('./src/*.jade', ['jade']);
 	gulp.watch('./src/*.styl', ['styl']);

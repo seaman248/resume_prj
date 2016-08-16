@@ -6,12 +6,42 @@ BLUE = #3d6cb0
 
 DESCTOP_SCREEN = only screen, min-device-width 960px, min-width 960px
 
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("./fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("./fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("./fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("./fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("./fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("./fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("./fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("./fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("./fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 html
 	overflow-y scroll
 
 body
 	margin-top 35px
-	font-family: Myriad Pro
+	font-family MyriadProRegular
 	font-size 25pt
 	height 100%
 .body-wraper
@@ -51,12 +81,12 @@ header
 		line-height 65px
 	h2.head_surname
 		padding-top: 10px
-		font-weight bold
+		font-family MyriadProBold
 		line-height: 10px
 	p.job
 		text-transform uppercase
 		font-size 70%
-		font-weight bold
+		font-family MyriadProBold
 		padding-top 8px
 		line-height: 60px
 		
@@ -99,7 +129,7 @@ header
 		color BLUE
 		font-size 110%
 		line-height 80px
-		font-weight bold
+		font-family MyriadProBold
 		padding-right 10px
 	.box-content
 		p.little
@@ -110,7 +140,7 @@ header
 		text-transform uppercase
 		font-size 55%
 		line-height: 45px
-		font-weight bold
+		font-family MyriadProBold
 	.contacts
 		clearfix()
 	.contact-name
@@ -153,11 +183,11 @@ header
 			h5
 				padding 0 0 0 40px
 				text-transform uppercase
-				font-weight: bold
+				font-family MyriadProBold
 				font-size 70%
 		.educat-date
 			text-transform none
-			font-weight 300
+			font-family MyriadProRegular
 			color black
 			padding-left 15px
 		.university-name
