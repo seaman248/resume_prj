@@ -4,6 +4,7 @@ meyer-reset()
 
 BLUE = #3d6cb0
 
+BIG_SCREEN = only screen, min-device-width 1366px, min-width 1366px
 DESCTOP_SCREEN = only screen, min-device-width 960px, min-width 960px
 
 @font-face {
@@ -45,25 +46,31 @@ body
 	font-size 25pt
 	height 100%
 .body-wraper
-	gs('fluid')
+	gs('fluid', 12, 9%)
+	clearfix()
 	+media-query(DESCTOP_SCREEN)
-		gs()
+		gs('fluid')
+	// +media-query(BIG_SCREEN)
+	// 	gs()
 .left-column
 	padding 0 20px 0 20px
 	+media-query(DESCTOP_SCREEN)
 		col(5)
+	// +media-query(BIG_SCREEN)
+	// 	col(5)
 		
 .right-column
 	padding 0 20px 0 20px
 	+media-query(DESCTOP_SCREEN)
 		col(6)
+	// +media-query(BIG_SCREEN)
+	// 	col(7)
 
 header
 	font-size 25pt
 	text-align center
 	padding-bottom 25px
 	.head_text
-		line-height: 0
 		text-transform uppercase
 		font-size 140%
 
@@ -80,22 +87,20 @@ header
 		padding-top: 20px
 		line-height 65px
 	h2.head_surname
-		padding-top: 10px
 		font-family MyriadProBold
-		line-height: 10px
+		font-size 170%
 	p.job
 		text-transform uppercase
 		font-size 70%
 		font-family MyriadProBold
-		padding-top 8px
-		line-height: 60px
+		padding-top 20px
 		
 .box
 	background-color white
 	padding-top 20px
 	.box-header
 		position relative
-		margin-bottom 18px
+		margin-bottom 5px
 		clearfix()
 	.box-header-line
 		position absolute
@@ -135,32 +140,35 @@ header
 		p.little
 			font-size 45%
 
-	h4
-		color BLUE
-		text-transform uppercase
-		font-size 55%
-		line-height: 45px
-		font-family MyriadProBold
 	.contacts
-		clearfix()
-	.contact-name
-		float left
-	.contact-content
-		float left
-		display inline-block
-		padding-left 20px
-		p
-			font-size 50%
-			line-height: 45px
+		display block
+		margin-top 22px
+		pair
+			display inline-block
+			padding-bottom 31px
+			width 100%
+			clearfix()
+		key
+			min-width 120px
+			font-size 55%
+			float left
+			font-family MyriadProBold
+			color BLUE
+			text-transform uppercase
+		value
+			float left
+			font-size 55%
 	
 	.skills
 		text-align center
+		display block
+		padding-top 10px
 		h5
 			text-transform uppercase
 			font-size 70%
 		ul.skill-points
 			display: inline-block
-			margin-top 15px
+			margin-top 8px
 			li
 				height 13px
 				width 13px
@@ -173,15 +181,15 @@ header
 			.skill-point
 				background-color BLUE
 	.skill-item-box
-		margin-bottom 30px
+		margin-bottom 22px
 		
 	ul.points
 		list-style none
 		clearfix()
 		li
 			margin-bottom: 20px
+			padding-left 40px
 			h5
-				padding 0 0 0 40px
 				text-transform uppercase
 				font-family MyriadProBold
 				font-size 70%
@@ -193,19 +201,18 @@ header
 		.university-name
 			font-weight: 300
 			font-size 70%
-			padding 0 0 0 40px
 			text-transform uppercase
 			margin-top 8px
 			margin-bottom 8px
 		.university-desc
 			font-weight: 100
 			font-size 42%
-			padding 0 0 0 40px
 		li:before
 			font normal normal normal 14px/1 FontAwesome
 			content '\f111'
 			position: absolute
 			font-size 70%
+			margin-left -40px
 	.educat-h5
 		color BLUE
 	

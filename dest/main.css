@@ -156,9 +156,17 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+.body-wraper:before,
+.body-wraper:after {
+  content: " ";
+  display: table;
+}
+.body-wraper:after {
+  clear: both;
+}
 @media only screen and (min-device-width: 960px) and (min-width: 960px) {
   .body-wraper {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -171,8 +179,8 @@ body {
     display: inline-block;
     float: left;
     overflow: hidden;
-    width: 380px;
-    margin: 0 10px;
+    width: 40.83333333333333%;
+    margin: 0 0.416666666666666%;
   }
 }
 .right-column {
@@ -183,8 +191,8 @@ body {
     display: inline-block;
     float: left;
     overflow: hidden;
-    width: 460px;
-    margin: 0 10px;
+    width: 49.16666666666666%;
+    margin: 0 0.416666666666666%;
   }
 }
 header {
@@ -193,7 +201,6 @@ header {
   padding-bottom: 25px;
 }
 header .head_text {
-  line-height: 0;
   text-transform: uppercase;
   font-size: 140%;
 }
@@ -211,16 +218,14 @@ header h1.head_name {
   line-height: 65px;
 }
 header h2.head_surname {
-  padding-top: 10px;
   font-family: MyriadProBold;
-  line-height: 10px;
+  font-size: 170%;
 }
 header p.job {
   text-transform: uppercase;
   font-size: 70%;
   font-family: MyriadProBold;
-  padding-top: 8px;
-  line-height: 60px;
+  padding-top: 20px;
 }
 .box {
   background-color: #fff;
@@ -228,7 +233,7 @@ header p.job {
 }
 .box .box-header {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
 }
 .box .box-header:before,
 .box .box-header:after {
@@ -280,35 +285,39 @@ header p.job {
 .box .box-content p.little {
   font-size: 45%;
 }
-.box h4 {
-  color: #3d6cb0;
-  text-transform: uppercase;
-  font-size: 55%;
-  line-height: 45px;
-  font-family: MyriadProBold;
+.box .contacts {
+  display: block;
+  margin-top: 22px;
 }
-.box .contacts:before,
-.box .contacts:after {
+.box .contacts pair {
+  display: inline-block;
+  padding-bottom: 31px;
+  width: 100%;
+}
+.box .contacts pair:before,
+.box .contacts pair:after {
   content: " ";
   display: table;
 }
-.box .contacts:after {
+.box .contacts pair:after {
   clear: both;
 }
-.box .contact-name {
+.box .contacts key {
+  min-width: 120px;
+  font-size: 55%;
   float: left;
+  font-family: MyriadProBold;
+  color: #3d6cb0;
+  text-transform: uppercase;
 }
-.box .contact-content {
+.box .contacts value {
   float: left;
-  display: inline-block;
-  padding-left: 20px;
-}
-.box .contact-content p {
-  font-size: 50%;
-  line-height: 45px;
+  font-size: 55%;
 }
 .box .skills {
   text-align: center;
+  display: block;
+  padding-top: 10px;
 }
 .box .skills h5 {
   text-transform: uppercase;
@@ -316,7 +325,7 @@ header p.job {
 }
 .box .skills ul.skill-points {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 .box .skills ul.skill-points li {
   height: 13px;
@@ -332,7 +341,7 @@ header p.job {
   background-color: #3d6cb0;
 }
 .box .skill-item-box {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .box ul.points {
   list-style: none;
@@ -347,9 +356,9 @@ header p.job {
 }
 .box ul.points li {
   margin-bottom: 20px;
+  padding-left: 40px;
 }
 .box ul.points li h5 {
-  padding: 0 0 0 40px;
   text-transform: uppercase;
   font-family: MyriadProBold;
   font-size: 70%;
@@ -363,7 +372,6 @@ header p.job {
 .box ul.points .university-name {
   font-weight: 300;
   font-size: 70%;
-  padding: 0 0 0 40px;
   text-transform: uppercase;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -371,13 +379,13 @@ header p.job {
 .box ul.points .university-desc {
   font-weight: 100;
   font-size: 42%;
-  padding: 0 0 0 40px;
 }
 .box ul.points li:before {
   font: normal normal normal 14px/1 FontAwesome;
   content: '\f111';
   position: absolute;
   font-size: 70%;
+  margin-left: -40px;
 }
 .box .educat-h5 {
   color: #3d6cb0;
