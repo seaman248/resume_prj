@@ -14,8 +14,8 @@ gulp.task('connect', function() {
 });
 
 gulp.task('img', function() {
-	gulp.src('./src/img')
-		.pipe(gulp.dest('./dest'))
+	gulp.src('./src/img/*.jpg')
+		.pipe(gulp.dest('./dest/img'))
 });
 
 gulp.task('jade', function() {

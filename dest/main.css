@@ -1,0 +1,266 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  margin-top: 35px;
+  font-family: Myriad Pro;
+  font-size: 25pt;
+  height: 100%;
+}
+.body-wraper {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.left-column {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  width: 380px;
+  margin: 0 10px;
+}
+header {
+  font-size: 25pt;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header .head_text {
+  line-height: 0;
+  text-transform: uppercase;
+  font-size: 140%;
+}
+header img.avatar {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #3d6cb0;
+  padding: 10px;
+  border-radius: 50%;
+  max-width: 50%;
+}
+header h1.head_name {
+  font-weight: 300;
+  padding-top: 20px;
+  line-height: 65px;
+}
+header h2.head_surname {
+  padding-top: 10px;
+  font-weight: bold;
+  line-height: 10px;
+}
+header p.job {
+  text-transform: uppercase;
+  font-size: 70%;
+  font-weight: bold;
+  line-height: 0;
+  padding-top: 8px;
+  line-height: 60px;
+}
+.box {
+  background-color: #fff;
+  padding-top: 20px;
+}
+.box .box-header {
+  position: relative;
+}
+.box .box-header:before,
+.box .box-header:after {
+  content: " ";
+  display: table;
+}
+.box .box-header:after {
+  clear: both;
+}
+.box .box-header-line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-bottom: 5px solid #3d6cb0;
+  margin-top: -5px;
+}
+.box .box-header-icon {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-color: #fff;
+  padding: 7px 10px 7px 0;
+}
+.box .box-header-icon .icon {
+  padding: 2px;
+  border: 1px solid #3d6cb0;
+  border-radius: 50%;
+  text-align: center;
+}
+.box .box-header-icon i {
+  background-color: #3d6cb0;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+}
+.box .box-header-text {
+  position: relative;
+  display: inline-block;
+  float: left;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #3d6cb0;
+  font-size: 110%;
+  line-height: 80px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.box .box-content {
+  padding-top: 5px;
+}
+.box .box-content p.little {
+  font-size: 45%;
+}
+.box h4 {
+  color: #3d6cb0;
+  text-transform: uppercase;
+  font-size: 55%;
+  line-height: 45px;
+}
+.box .contacts:before,
+.box .contacts:after {
+  content: " ";
+  display: table;
+}
+.box .contacts:after {
+  clear: both;
+}
+.box .contact-name {
+  float: left;
+}
+.box .contact-content {
+  float: left;
+  display: inline-block;
+  padding-left: 20px;
+}
+.box .contact-content p {
+  font-size: 50%;
+  line-height: 45px;
+}
