@@ -45,7 +45,7 @@ gulp.task('watch', ['img', 'jade', 'styl'], function() {
 });
 
 gulp.task('dest', function() {
-	gulp.src('./dest/**')
+	gulp.src('./dest/**/**')
 		gulp.dest('../resume_prj_dest')
 });
 
