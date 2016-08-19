@@ -286,11 +286,16 @@ header p.job {
 }
 .box .contacts {
   display: block;
-  margin-top: 32px;
+  margin-top: 27px;
+}
+@media only screen and (min-device-width: 960px) and (min-width: 960px) {
+  .box .contacts {
+    font-size: 1.2rem;
+  }
 }
 .box .contacts pair {
   display: inline-block;
-  padding-bottom: 37px;
+  padding-bottom: 33px;
   width: 100%;
 }
 .box .contacts pair:before,
@@ -302,16 +307,19 @@ header p.job {
   clear: both;
 }
 .box .contacts key {
-  min-width: 120px;
-  font-size: 55%;
-  float: left;
+  min-width: 250px;
   font-family: MyriadProBold;
+  float: left;
   color: #3d6cb0;
   text-transform: uppercase;
 }
+@media only screen and (min-device-width: 960px) and (min-width: 960px) {
+  .box .contacts key {
+    min-width: 120px;
+  }
+}
 .box .contacts value {
   float: left;
-  font-size: 55%;
 }
 .box .skills {
   text-align: center;

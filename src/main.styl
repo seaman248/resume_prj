@@ -141,22 +141,24 @@ header
 
 	.contacts
 		display block
-		margin-top 32px
+		margin-top 27px
+		+media-query(DESCTOP_SCREEN)
+			font-size 1.2rem
 		pair
 			display inline-block
-			padding-bottom 37px
+			padding-bottom 33px
 			width 100%
 			clearfix()
 		key
-			min-width 120px
-			font-size 55%
-			float left
+			min-width 250px
+			+media-query(DESCTOP_SCREEN)
+				min-width 120px
 			font-family MyriadProBold
+			float left
 			color BLUE
 			text-transform uppercase
 		value
 			float left
-			font-size 55%
 	
 	.skills
 		text-align center
